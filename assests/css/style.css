@@ -3,62 +3,97 @@
     --header_h1_color: purple;
     --text_color: purple;
     --gradient: linear-gradient(purple, blue);
-    --background_color: black;
+    --background_color: gray;
+    --outline_color: white;
 }
 
 *{
     font-family: 'Courier New', Courier, monospace;
+    background-color: var(--background_color);
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 200%;
     color: var(--title_color);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    outline-style: solid;
+    outline-color: var(--outline_color);
+    position: relative;
+    margin-top: -20px;
+    text-align: center;
+    color: var(--text_color);
+    font-size: 150%;
+}
+
+pre {
+    display:;
+    background-color: var(--gradient);
+}
+
+p {
+    text-align: center;
+    color: var(--text_color);
+    margin: 40px;
 }
 
 header p {
     text-align: center;
     color: var(--text_color);
+    margin-bottom: 40px;
 }
 
 .grid {
     display: grid;
     width: 100%;
+    gap: 80px;
     grid-template-columns: repeat(3,1fr);
 }
 
-.one {
+.one .dotted {
     grid-column: 1 ;
     grid-row: 1;
+    
 }
 
-.two {
+.two .dotted {
     grid-column: 2 ;
     grid-row: 1;
 }
 
-.three {
+.three .dotted {
     grid-column: 3;
     grid-row: 1;
 }
 
-.four {
+.four .dotted {
     grid-column: 1;
     grid-row: 2;
 }
 
-.five {
+.five .dotted {
     grid-column: 2;
     grid-row: 2;
 }
 
-.six {
+.six .dotted {
     grid-column: 3;
     grid-row: 2;
+}
+
+.dotted {
+    outline-style: dotted;
+    outline-color: var(--outline_color);
 }
 
 footer {
     text-align: center;
     color: var(--text_color);
     font-size: 120%;
+    margin: 100px;
 }
+
