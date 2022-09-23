@@ -1,0 +1,14 @@
+:root{
+    --title_color: purple;
+    --header_h1_color: purple;
+    --text_color: purple;
+    --gradient: linear-gradient(purple, blue);
+    --background_color: black;
+}
+
+h1{
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--title_color);
+}
